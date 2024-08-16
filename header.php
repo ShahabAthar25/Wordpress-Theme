@@ -11,7 +11,7 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin-bottom: 40px;">
         <div class="container">
             <a class="navbar-brand" href="<?php echo get_home_url(); ?>">
                 <h3><?php echo get_bloginfo('name'); ?></h3>
@@ -33,5 +33,6 @@
 
                 ); ?>
             </div>
+            <?php get_search_form() ?>
         </div>
     </nav>
