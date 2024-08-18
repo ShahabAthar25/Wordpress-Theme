@@ -3,3 +3,40 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+
+.sidebar {
+    border: 1px solid #d2d2d2;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.sidebar li .wp-block-heading {
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.sidebar .widget_categories ul, .sidebar .widget_recent_entries ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.sidebar .widget_categories ul li a::before, .sidebar .widget_recent_entries ul li a::before {
+    content: '>';
+    font-weight: 700;
+    margin-right: 2px;
+}
+
+.sidebar .widget_categories ul li a, .sidebar .widget_recent_entries ul li a {
+    text-decoration: none;
+    color: #000410;
+}
+
+.sidebar .widget_categories ul li a:hover, .sidebar .widget_recent_entries ul li a:hover {
+    color: #2479fe;
+    transition: 300ms;
+    margin-left: 5px;
+}
+
+.widget {
+    list-style: none !important;
+}
