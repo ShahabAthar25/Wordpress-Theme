@@ -22,6 +22,16 @@ function load_js()
 add_action('wp_enqueue_scripts', 'load_js');
 
 
+// Updating permalinks
+
+function change_permalinks()
+{
+    global $wp_rewrite;
+    $wp_rewrite->set_permalink_structure('/%postname%/');
+    $wp_rewrite->flush_rules();
+}
+add_action('init', 'change_permalinks');
+
 // Theme Supports
 
 add_theme_support('menus');
